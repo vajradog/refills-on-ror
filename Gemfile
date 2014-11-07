@@ -17,3 +17,5 @@ gem 'refills'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
+# this gem will help serve assets to heroku
+gem 'rails_12factor', group: :production
