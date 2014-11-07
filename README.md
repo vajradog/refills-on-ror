@@ -4,3 +4,11 @@ This is a quick sample Ruby on Rails app using Refills, Bourbon, Bitters, and Ne
 
 This app uses ruby 2.0.0 and rails 4.1.4
 I've also postgresql to deploy to heroku and gem 'rails_12factor' to serve assets.
+
+[demo app](https://refills-on-rails.herokuapp.com/)
+
+![screen shot 1](http://s17.postimg.org/qeiljgdwv/Screen_Shot_2014_11_07_at_11_01_12_AM.png)
+
+![screen shot 2](http://s17.postimg.org/qq01w7ucv/Screen_Shot_2014_11_07_at_11_01_29_AM.png)
+
+![screen shot 3](http://s17.postimg.org/8082fh1m7/Screen_Shot_2014_11_07_at_11_01_37_AM.png)
