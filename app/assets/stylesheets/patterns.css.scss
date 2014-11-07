@@ -1,0 +1,661 @@
+/***************************
+These are the styles for the patterns section
+***************************/
+
+
+/***************************
+accordion/tabs styling begins, please note there is 
+accompanying javascript file for this aswell. 
+***************************/
+
+.accordion-tabs {
+  $tab-border-color: $base-border-color;
+  $tab-border: 1px solid $tab-border-color;
+  $tab-content-background: lighten($light-gray, 10);
+  $tab-active-background: $tab-content-background;
+  $tab-inactive-color: $base-background-color;
+  $tab-inactive-hover-color: darken($light-gray, 5);
+  $tab-mode: $medium-screen;
+
+  @include clearfix;
+  margin-bottom: $base-spacing;
+
+  @include media(max-width $tab-mode) {
+    border: $tab-border;
+    border-radius: $base-border-radius;
+  }
+
+  .tab-header-and-content {
+    @include media($tab-mode) {
+      display: inline;
+    }
+
+    &:first-child .tab-link {
+      border-top-left-radius: $base-border-radius;
+      border-top-right-radius: $base-border-radius;
+
+      @include media(max-width $tab-mode) {
+        border-top: 0;
+      }
+    }
+
+    &:last-child .tab-link {
+      @include media(max-width $tab-mode) {
+        border-bottom-left-radius: $base-border-radius;
+        border-bottom-right-radius: $base-border-radius;
+      }
+    }
+  }
+
+  .tab-link {
+    background-color: $tab-inactive-color;
+    border-top: $tab-border;
+    color: $dark-gray;
+    display: block;
+    font-weight: bold;
+    padding: $base-spacing/2 $gutter/2;
+
+    @include media($tab-mode) {
+      @include inline-block;
+      border-top-left-radius: $base-border-radius;
+      border-top-right-radius: $base-border-radius;
+      border-top: 0;
+    }
+
+    &:hover {
+      color: $base-link-color;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &.is-active {
+      background-color: $tab-active-background;
+
+      @include media($tab-mode) {
+        background-color: $tab-active-background;
+        border: $tab-border;
+        border-bottom-color: $tab-active-background;
+        margin-bottom: -1px;
+      }
+    }
+  }
+
+  .tab-content {
+    background: $tab-content-background;
+    display: none;
+    padding: $base-spacing $gutter;
+
+    @include media($tab-mode) {
+      border-bottom-left-radius: $base-border-radius;
+      border-bottom-right-radius: $base-border-radius;
+      border-top-right-radius: $base-border-radius;
+      border: $tab-border;
+      float: left;
+    }
+  }
+}
+
+/***************************
+accordion/tabs styling end
+***************************/
+
+
+/***************************
+browser styling begins 
+***************************/
+$browser-top-bar-height: 1.5em;
+$browser-circle-size: .5em; 
+$browser-circle-margin: ($browser-top-bar-height - $browser-circle-size) / 2;
+$browser-top-bar-background: lighten(#DFDFDF, 5);
+$browser-border: 0px;
+$browser-background: $base-background-color;
+$browser-content-background-1: #F0F0F0;
+$browser-content-background-2: $base-background-color;
+$browser-content-background-3: #F0F0F0;
+
+.browsers {
+  display:inline-block;
+  padding-top: 0;
+  text-align:center;
+  width:100%;
+
+  @include media($large-screen) {
+    padding-top: 2em;
+  }
+}
+
+.browser-top-bar {
+  @include linear-gradient($browser-top-bar-background, darken($browser-top-bar-background, 2));
+  border-top-left-radius: $base-border-radius;
+  border-top-right-radius: $base-border-radius;
+  border: $browser-border;
+  box-shadow: inset 0 1px 0 transparentize(white, .6);
+  height: $browser-top-bar-height;
+  width: 100%;
+}
+
+.browser-circle {
+  border-radius: $browser-circle-size * 2;
+  box-shadow: 0 1px 0px transparentize(white, .5), inset 0 1px 1px transparentize(black, 0.8);
+  display: inline-block;
+  @include size($browser-circle-size);
+  margin: $browser-circle-margin 0;
+}
+
+.browser-circle:nth-child(1) {
+  background: #FF6F55;
+  margin-left: $browser-circle-margin;
+}
+
+.browser-circle:nth-child(2) {
+  background: #F5B01D;
+  margin-left: $browser-circle-margin / 3;
+}
+
+.browser-circle:nth-child(3) {
+  background: #51B151;
+  margin-left: $browser-circle-margin / 3;
+}
+
+//////////////////////////////////////////////
+
+.browser {
+  border-bottom: none;
+  border-top-left-radius: $base-border-radius;
+  border-top-right-radius: $base-border-radius;
+  box-shadow: 0 3px 5px transparentize(black, .7);
+  display: inline-block;    
+  text-align: left;
+  width:20%;
+}
+
+.browser:nth-child(1) {
+  background-color: $browser-content-background-1;
+  display: none;
+
+  @include media($large-screen) {
+    display: inline-block;    
+  }
+
+  .browser-content {
+    background: url(https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/refills-screenshot1.png);
+    background-color: $browser-content-background-1;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.browser:nth-child(2) {
+  @include transform(scale(1));
+  background-color: $browser-content-background-2; 
+  width: 90%;
+  
+  @include media($large-screen) {
+    @include transform(scale(1.2));
+    width: 40%;
+  }
+
+  .browser-content {
+    background: url(https://raw.githubusercontent.com/thoughtbot/refills/9c16f8b69d857c296c85f2d8c434e825f813a566/source/images/refills-screenshot2.jpg);
+    background-color: $browser-content-background-2; 
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.browser:nth-child(3) {
+  background-color: $browser-content-background-3; 
+  display: none;
+   
+  @include media($large-screen) {
+    display: inline-block;    
+  }
+
+  .browser-content {
+    background: url(https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/refills-screenshot3.png);
+    background-color: $browser-content-background-3; 
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.browser-content {
+  border-left: $browser-border;
+  border-right: $browser-border;
+  height: 17em;
+  overflow: hidden;
+
+  @include media($large-screen) {
+    height: 18em;
+  }
+}
+
+//////////////////////////////////////////////
+
+.cover {
+  background: $base-background-color;
+  border-top: 1px solid #E6E6E6;
+  height: 3.2em;
+  margin-top: -1em;
+  position: relative;
+  width: 100%;
+  z-index: 999;
+}
+
+/***************************
+browser styling ends 
+***************************/
+
+/***************************
+card styling begins 
+***************************/
+.cards {
+  @include clearfix;
+}
+
+.card {
+  $card-border-color: $base-border-color;
+  $card-border: 1px solid $card-border-color;
+  $card-background: lighten($card-border-color, 10);
+  $card-header-background: $card-background;
+  $card-hover-background: lighten($card-background, 5);
+  $card-image-background: #DBD199;
+  $card-image-hover-background: lighten($card-image-background, 5);
+  $card-stats-color: lighten($base-accent-color, 10);
+
+  @include transition (all 0.2s ease-in-out);
+  background-color: $card-background;
+  border-radius: $base-border-radius;
+  border: $card-border;
+  margin-bottom: $base-spacing;
+  cursor: pointer;
+  box-shadow: 0 2px 4px darken($base-background-color, 10);
+  position: relative;
+
+  @include media($large-screen) {
+    @include span-columns(4);  
+    @include omega(3n);
+  }
+
+  .card-image {
+    overflow: hidden;
+    max-height: 150px;
+
+    img {
+      width: 100%;
+      @include transition (all 0.2s ease-in-out);
+      background: $card-image-background;
+      border-top-left-radius: $base-border-radius;
+      border-top-right-radius: $base-border-radius;
+    }
+  }
+
+  .ribbon-wrapper {
+    $ribbon-size: 85px;
+    $ribbon-background: $base-accent-color;
+    @include size($ribbon-size);
+    overflow: hidden;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+
+    .ribbon {
+      font-size: .8em;
+      font-weight: 800;
+      text-align: center;
+      @include transform(rotate(45deg));
+      position: relative;
+      padding: 2px 7px;
+      left: -5px;
+      top: 15px;
+      width: 120px;
+      background-color: $ribbon-background;
+      color: white;
+      box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+    }
+  }
+
+  .card-header {
+    @include transition (all 0.2s ease-in-out);
+    background-color: $card-header-background;
+    border-bottom: $card-border;
+    border-radius: $base-border-radius $base-border-radius 0 0;
+    font-weight: bold;
+    padding: $base-spacing/3 $gutter/2;
+  }
+
+  .card-copy {
+    padding: $base-spacing/2 $gutter/2;
+    font-size: .9em;
+    line-height: 1.5em;
+  }
+
+  .card-stats {
+    padding: $base-spacing/2 $gutter/2;
+    overflow: auto;
+
+    ul li {
+      display: inline;
+      color: $card-stats-color;
+      font-weight: 800;
+      font-size: 1.2em;
+      float: left;
+      border-right: 1px solid transparentize($base-font-color, .8);
+      line-height: 1.1em;
+      padding: 0 .7em 0 .7em;
+
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        border-right: 0;
+      }
+
+      span {
+        color: $base-font-color;
+        font-size: .7em;
+        display: block;
+        font-weight: normal;
+      }
+    }
+  }
+
+  &:hover {
+    background-color: $card-hover-background;
+    
+    .card-image img {
+      background: $card-image-hover-background;
+    }
+  
+    .card-header {
+      background-color: $card-hover-background;
+    }
+  }
+
+  &:active {
+    background-color: $card-background;
+
+    .card-header {
+      background-color: $card-background;
+    }
+  }
+}
+/***************************
+CARDS styling ends 
+***************************/
+
+/***************************
+COMMENTS styling begins 
+***************************/
+.comment {
+  $comment-gutter: 1.4em;
+  $comment-image-padding: .7em;
+  $comment-image-width: 4em;
+  $comment-color: $base-font-color;
+  $comment-background: lighten($base-accent-color, 15);
+  $comment-detail-color: transparentize($comment-color, .5);
+  $comment-image-vert-alignment: top;
+
+  display: table;
+  width: 100%;
+  margin-bottom: $base-spacing;
+  padding-bottom: 1em;
+  border-bottom: 1px solid transparentize($comment-color, .9);
+
+  .comment-image,
+  .comment-content {
+    display: table-cell;
+    vertical-align: $comment-image-vert-alignment;
+  }
+
+  .comment-image {
+    padding-right: $comment-gutter;
+
+    > img {
+      width: $comment-image-width;
+      height: auto;
+      border-radius: $base-border-radius;
+      padding: $comment-image-padding;
+      background: $comment-background;
+      display: block;
+      max-width: none;
+    }
+
+    .comment-reverse-order & {
+      padding-right: 0;
+      padding-left: 10px;
+    }
+  }
+
+  .comment-content {
+    width: 100%;
+
+    h1 {
+      font-size: 1em;
+      margin-bottom: .5em;
+    }
+
+    p {
+      margin-bottom: .5em;
+    }
+
+    p.comment-detail {
+      font-style: italic;
+      font-size: .9em;
+      color: $comment-detail-color;
+    }
+  }
+}
+
+
+/***************************
+COMMENTS styling ENDS 
+***************************/
+
+/***************************
+DEVICE styling ENDS 
+***************************/
+$device-padding-vertical: 5em;
+$device-padding-horizontal: .4em;
+$device-screen-width: 14em;
+$device-screen-height: 25em;
+$device-background: darken(gray, 40);
+$device-backside-background: darken($device-background, 10);
+$device-text-color: white;
+
+$device-background-top: #162C4C; 
+$device-background-bottom: #0A120D;
+$gradient-angle: 10deg;
+$device-image: 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png';
+$device-screen-image: 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/cosmin_capitanu_screen.jpg';
+
+.device-background {
+  @include background(url($device-image), linear-gradient($gradient-angle, $device-background-bottom, $device-background-top), no-repeat $device-background-top scroll);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 20em;
+
+  button {
+    @include button(simple, $base-background-color);
+    font-size: $base-font-size;
+    outline: none;
+  }
+}
+
+.device-text {
+  color: $device-text-color;
+  padding: 2em;
+
+  @include media($large-screen) {
+    max-width: 50%;
+    padding: 4em;
+    float: left;
+  }
+
+  h4 {
+    margin-bottom: .5em;
+    padding-bottom: .5em;
+    border-bottom: 1px solid transparentize($device-text-color, .7);
+  }
+
+  p {
+    font-family: $serif;
+    margin-bottom: 1.5em;
+  }
+}
+
+.device {
+  display: none;
+  position: relative;
+
+  @include media($large-screen) {
+    @include transform(
+      perspective(800px) 
+      translateX(0px) 
+      translateY(-100px) 
+      translateZ(50px) 
+      rotateX(0deg) 
+      rotateY(-20deg) 
+      rotateZ(-0deg));
+    display: block;
+    float: right;
+    margin-bottom: -12em;
+    margin-right: 5em;
+    padding: $device-padding-vertical 0;
+    width: $device-screen-width + (2 * $device-padding-horizontal);
+    border-radius: 2em;
+    background: $device-background;
+    box-shadow: 
+      1px 0px lighten($device-backside-background, 20), 
+      4px 0px lighten($device-backside-background, 2),
+      7px 0px $device-backside-background,
+      10px 0px $device-backside-background,
+      13px 0px $device-backside-background;
+      z-index: 99999;
+
+    .screen {
+      @include size($device-screen-width $device-screen-height);
+      background-image: url($device-screen-image);
+      background-size: cover;
+      box-shadow: inset 0 1px 8px transparentize(black, .5);
+      margin: auto;
+      border-radius: .2em;
+    }
+  }
+}
+
+/***************************
+DEVICE styling ENDS 
+***************************/
+
+/***************************
+GRID ITEMS styling begins 
+***************************/
+@mixin grid-item-columns($columns) {
+  width: (100% / 12) * $columns;
+}
+
+.grid-items {
+  $grid-items-background: $base-background-color;
+  $grid-item-background: desaturate($base-accent-color, 30); 
+  $grid-item-colors: 
+    desaturate($base-accent-color, 30), 
+    #3581A5, 
+    #5FBEBE,
+    #98C79A,
+    #A7A891, 
+    #BDCC97,
+    #979EA0;
+  $grid-item-border-size: 9px;
+  $grid-item-columns: 4;
+  $grid-item-big-columns: 8;
+  $grid-item-color: white;
+  $grid-item-height: 14em;
+
+  @include clearfix;
+    
+  .grid-item {
+    @include transition (all 0.2s ease-in-out);
+    height: $grid-item-height;
+    background: $grid-item-background;
+    width: 100%;
+    overflow: hidden;
+    float: left;
+    padding: 2em;
+    border-top: 0;
+    border-bottom: $grid-item-border-size solid $grid-items-background;
+    border-left: $grid-item-border-size /2 solid $grid-items-background;
+    border-right: $grid-item-border-size /2 solid $grid-items-background;
+    text-align: center;
+    cursor: pointer;
+
+    @include media($large-screen) {
+      @include grid-item-columns($grid-item-columns);
+    }
+
+    @for $i from 1 to 8 { // assign colors from $grid-item-colors list
+      &:nth-child(#{$i}) {
+        $background-from-list: nth($grid-item-colors, $i);
+        background-color: $background-from-list;
+        box-shadow: inset 0px 0px 1px 2px darken($background-from-list, 10);
+        &:hover {
+          background-color: darken($background-from-list, 10);
+          background-repeat: no-repeat;
+          background-position: top;
+          background-size: cover;
+        }
+      }
+    }
+  }
+
+  .grid-item img {
+      display: block;
+      height: 3em;
+      margin: auto;
+      margin-bottom: 1em;
+    }
+
+  .grid-item h1 {
+      color: $grid-item-color;
+      font-size: 1.3em;
+      margin-bottom: .4em;
+    }
+
+  .grid-item p {
+      margin: auto;
+      color: transparentize($grid-item-color, .3);
+      @include media($medium-screen) {
+        max-width: 70%;
+      }
+    }
+
+  .grid-item-big {
+    @include media($large-screen) {
+      @include grid-item-columns($grid-item-big-columns);
+    }
+    p {
+      @include media($medium-screen) {
+        max-width: 60%;
+      }  
+    }
+  }
+
+  .grid-item-image {
+    background: url(/images/lake-transparent.png);
+    background-color: $grid-item-background;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+  }
+}
+
+/***************************
+GRID ITEMS styling ends 
+***************************/
