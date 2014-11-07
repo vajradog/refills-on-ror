@@ -15,7 +15,8 @@ I've also postgresql to deploy to heroku and gem 'rails_12factor' to serve asset
 
 ## USAGE
 
-Download the repo
+Download the repo to your computer.
+
 From your terminal, cd into the folder
 
 install all the gems
