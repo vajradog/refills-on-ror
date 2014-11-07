@@ -1,0 +1,1654 @@
+@charset "UTF-8";
+/* line 2, /Users/VajraCreations/.rvm/gems/ruby-2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Bitters 0.10.0
+ * http://bitters.bourbon.io
+ * Copyright 2013–2014 thoughtbot, inc.
+ * MIT License */
+/* line 1, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/base/extends/_button.scss */
+button,
+input[type="submit"] {
+  -webkit-font-smoothing: antialiased;
+  background-color: #477dca;
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1;
+  padding: 0.75em 1em;
+  text-decoration: none;
+}
+/* line 13, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/base/extends/_button.scss */
+button:hover,
+input[type="submit"]:hover {
+  background-color: #2c5999;
+  color: white;
+}
+/* line 18, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/base/extends/_button.scss */
+button:disabled,
+input[type="submit"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* line 1, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/base/_typography.scss */
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: white;
+  color: #333333;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+/* line 15, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/base/_typography.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  line-height: 1.25;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+}
+
+/* line 22, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/base/_typography.scss */
+h1 {
+  font-size: 2.25em;
+}
+
+/* line 26, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/base/_typography.scss */
+h2 {
+  font-size: 2em;
+}
+
+/* line 30, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/base/_typography.scss */
+h3 {
+  font-size: 1.75em;
+}
+
+/* line 34, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/base/_typography.scss */
+h4 {
+  font-size: 1.5em;
+}
+
+/* line 38, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/base/_typography.scss */
+h5 {
+  font-size: 1.25em;
+}
+
+/* line 42, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/base/_typography.scss */
+h6 {
+  font-size: 1em;
+}
+
+/* line 46, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/base/_typography.scss */
+p {
+  margin: 0 0 0.75em;
+}
+
+/* line 50, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/base/_typography.scss */
+a {
+  -webkit-transition: color 0.1s linear;
+  -moz-transition: color 0.1s linear;
+  transition: color 0.1s linear;
+  color: #477dca;
+  text-decoration: none;
+}
+/* line 55, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/base/_typography.scss */
+a:hover {
+  color: #2c5999;
+}
+/* line 59, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/base/_typography.scss */
+a:active, a:focus {
+  color: #2c5999;
+  outline: none;
+}
+
+/* line 65, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/base/_typography.scss */
+hr {
+  border-bottom: 1px solid #dddddd;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: 1.5em 0;
+}
+
+/* line 74, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/base/_typography.scss */
+img,
+picture {
+  margin: 0;
+  max-width: 100%;
+}
+
+/* line 79, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/base/_typography.scss */
+blockquote {
+  border-left: 2px solid #dddddd;
+  color: #595959;
+  margin: 1.5em 0;
+  padding-left: 0.75em;
+}
+
+/* line 86, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/base/_typography.scss */
+cite {
+  color: #737373;
+  font-style: italic;
+}
+/* line 90, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/base/_typography.scss */
+cite:before {
+  content: "\2014 \00A0";
+}
+
+/* line 1, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/base/_forms.scss */
+fieldset {
+  background: #f7f7f7;
+  border: 1px solid #dddddd;
+  margin: 0 0 0.75em 0;
+  padding: 1.5em;
+}
+
+/* line 10, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/base/_forms.scss */
+input,
+label,
+select {
+  display: block;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em;
+}
+
+/* line 16, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/base/_forms.scss */
+label {
+  font-weight: bold;
+  margin-bottom: 0.375em;
+}
+/* line 20, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/base/_forms.scss */
+label.required:after {
+  content: "*";
+}
+/* line 24, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/base/_forms.scss */
+label abbr {
+  display: none;
+}
+
+/* line 31, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/base/_forms.scss */
+textarea,
+input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"],
+select[multiple=multiple] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: border-color;
+  -moz-transition: border-color;
+  transition: border-color;
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid #dddddd;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em;
+  margin-bottom: 0.75em;
+  padding: 0.5em 0.5em;
+  width: 100%;
+}
+/* line 44, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/base/_forms.scss */
+textarea:hover,
+input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover,
+select[multiple=multiple]:hover {
+  border-color: #c4c4c4;
+}
+/* line 48, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/base/_forms.scss */
+textarea:focus,
+input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
+select[multiple=multiple]:focus {
+  border-color: #477dca;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(55, 112, 192, 0.7);
+  outline: none;
+}
+
+/* line 55, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/base/_forms.scss */
+textarea {
+  resize: vertical;
+}
+
+/* line 59, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/base/_forms.scss */
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+/* line 64, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/base/_forms.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  margin-right: 0.375em;
+}
+
+/* line 69, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/base/_forms.scss */
+input[type="file"] {
+  padding-bottom: 0.75em;
+  width: 100%;
+}
+
+/* line 74, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/base/_forms.scss */
+select {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+  width: auto;
+}
+
+/* line 1, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/base/_tables.scss */
+table {
+  border-collapse: collapse;
+  margin: 0.75em 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+/* line 8, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/base/_tables.scss */
+th {
+  border-bottom: 1px solid #b7b7b7;
+  font-weight: bold;
+  padding: 0.75em 0;
+  text-align: left;
+}
+
+/* line 15, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/base/_tables.scss */
+td {
+  border-bottom: 1px solid #dddddd;
+  padding: 0.75em 0;
+}
+
+/* line 22, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/base/_tables.scss */
+tr,
+td,
+th {
+  vertical-align: middle;
+}
+
+/* line 2, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/base/_lists.scss */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+/* line 20, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/base/_lists.scss */
+dl {
+  margin-bottom: 0.75em;
+}
+/* line 23, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/base/_lists.scss */
+dl dt {
+  font-weight: bold;
+  margin-top: 0.75em;
+}
+/* line 28, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/base/_lists.scss */
+dl dd {
+  margin: 0;
+}
+
+/* line 2, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/base/_buttons.scss */
+button,
+input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+/* line 1, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-color: #FFF;
+  font-size: 14px;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+/* line 11, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+.centered-navigation {
+  background-color: #e7f1ec;
+  border-bottom: 1px solid #d4e6dd;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  height: 60px;
+  width: 100%;
+  z-index: 9999;
+}
+/* line 33, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+.centered-navigation .mobile-logo {
+  display: inline;
+  float: left;
+  max-height: 60px;
+  padding-left: 1em;
+}
+/* line 39, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+.centered-navigation .mobile-logo img {
+  max-height: 60px;
+  opacity: .6;
+  padding: .8em 0;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 33, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+  .centered-navigation .mobile-logo {
+    display: none;
+  }
+}
+/* line 50, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+.centered-navigation .centered-navigation-menu-button {
+  color: rgba(51, 51, 51, 0.7);
+  display: block;
+  float: right;
+  font-weight: 700;
+  line-height: 60px;
+  margin: 0;
+  padding-right: 1em;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 50, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+  .centered-navigation .centered-navigation-menu-button {
+    display: none;
+  }
+}
+/* line 64, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+.centered-navigation .centered-navigation-menu-button:hover {
+  color: #333333;
+}
+/* line 71, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+.centered-navigation .centered-navigation-wrapper {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 999;
+}
+/* line 15, /Users/VajraCreations/.rvm/gems/ruby-2.1.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_clearfix.scss */
+.centered-navigation .centered-navigation-wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 15, /Users/VajraCreations/.rvm/gems/ruby-2.1.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_clearfix.scss */
+.centered-navigation .centered-navigation-wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 78, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+.centered-navigation ul.centered-navigation-menu {
+  -webkit-transform-style: preserve-3d;
+  clear: both;
+  display: none;
+  margin: 0 auto;
+  overflow: visible;
+  padding: 0;
+  width: 100%;
+  z-index: 99999;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 78, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+  .centered-navigation ul.centered-navigation-menu {
+    display: block;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 53.75em) {
+  /* line 96, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+  .centered-navigation .nav-link:first-child {
+    margin-left: 2.2em;
+  }
+}
+/* line 102, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+.centered-navigation ul li.nav-link {
+  background: #e7f1ec;
+  display: block;
+  line-height: 60px;
+  overflow: hidden;
+  padding-right: 1em;
+  text-align: right;
+  width: 100%;
+  z-index: 9999;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 102, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+  .centered-navigation ul li.nav-link {
+    background: transparent;
+    display: inline;
+    line-height: 60px;
+  }
+  /* line 117, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+  .centered-navigation ul li.nav-link a {
+    padding-right: 1em;
+  }
+}
+/* line 122, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+.centered-navigation ul li.nav-link a {
+  color: rgba(51, 51, 51, 0.7);
+  display: inline-block;
+}
+/* line 127, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+.centered-navigation ul li.nav-link a:hover {
+  color: #333333;
+}
+/* line 133, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+.centered-navigation li.logo.nav-link {
+  display: none;
+  line-height: 0;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 133, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+  .centered-navigation li.logo.nav-link {
+    display: inline;
+  }
+}
+/* line 142, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+.centered-navigation .logo img {
+  margin-bottom: -0.66667em;
+  max-height: 2em;
+  opacity: .6;
+}
+/* line 150, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+.centered-navigation li.more.nav-link {
+  padding-right: 0;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 150, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+  .centered-navigation li.more.nav-link {
+    padding-right: 1em;
+  }
+}
+/* line 157, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+.centered-navigation li.more.nav-link > ul > li:first-child a {
+  padding-top: 1em;
+}
+/* line 161, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+.centered-navigation li.more.nav-link a {
+  margin-right: 1em;
+}
+/* line 165, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+.centered-navigation li.more.nav-link > a {
+  padding-right: 0.6em;
+}
+/* line 169, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+.centered-navigation li.more.nav-link > a:after {
+  position: absolute;
+  top: auto;
+  right: -0.4em;
+  bottom: auto;
+  left: auto;
+  color: rgba(51, 51, 51, 0.7);
+  content: '\25BE';
+}
+/* line 176, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+.centered-navigation li.more {
+  overflow: visible;
+  padding-right: 0;
+}
+/* line 180, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+.centered-navigation li.more a {
+  padding-right: 1em;
+}
+/* line 184, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+.centered-navigation li.more > a {
+  padding-right: 1.6em;
+  position: relative;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 184, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+  .centered-navigation li.more > a {
+    margin-right: 1em;
+  }
+}
+/* line 192, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+.centered-navigation li.more > a:after {
+  content: '›';
+  font-size: 1.2em;
+  position: absolute;
+  right: 0.5em;
+}
+/* line 200, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+.centered-navigation li.more:hover > .submenu {
+  display: block;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 176, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+  .centered-navigation li.more {
+    padding-right: 1em;
+    position: relative;
+  }
+}
+/* line 210, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+.centered-navigation ul.submenu {
+  display: none;
+  padding-left: 0;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 210, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+  .centered-navigation ul.submenu {
+    left: -1em;
+    position: absolute;
+    top: 1.5em;
+  }
+}
+@media screen and (min-width: 53.75em) {
+  /* line 220, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+  .centered-navigation ul.submenu .submenu {
+    left: 11.8em;
+    top: 0;
+  }
+}
+/* line 227, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+.centered-navigation ul.submenu li {
+  display: block;
+  padding-right: 0;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 227, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+  .centered-navigation ul.submenu li {
+    line-height: 46.15385px;
+  }
+  /* line 234, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+  .centered-navigation ul.submenu li:first-child > a {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+  /* line 239, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+  .centered-navigation ul.submenu li:last-child > a {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding-bottom: .7em;
+  }
+}
+/* line 246, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+.centered-navigation ul.submenu li a {
+  background-color: #ddebe4;
+  display: inline-block;
+  text-align: right;
+  width: 100%;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 246, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+  .centered-navigation ul.submenu li a {
+    background-color: #e7f1ec;
+    padding-left: 1em;
+    text-align: left;
+    width: 12em;
+  }
+}
+
+/* line 264, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+#container {
+  margin: 0 100px;
+}
+
+/* line 268, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/layout.css.scss */
+a {
+  color: #2D6DD2;
+}
+
+/* line 1, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/pages.css.scss */
+.hero {
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png"), -webkit-linear-gradient(-280deg, #217142, #214271), no-repeat #214271 scroll;
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png"), linear-gradient(10deg, #217142, #214271), no-repeat #214271 scroll;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  padding-bottom: 4em;
+}
+/* line 15, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/pages.css.scss */
+.hero .hero-logo img {
+  height: 3em;
+  margin-bottom: 2.5em;
+}
+/* line 20, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/pages.css.scss */
+.hero .hero-inner {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3em;
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+/* line 15, /Users/VajraCreations/.rvm/gems/ruby-2.1.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_clearfix.scss */
+.hero .hero-inner:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 15, /Users/VajraCreations/.rvm/gems/ruby-2.1.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_clearfix.scss */
+.hero .hero-inner:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 28, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/pages.css.scss */
+.hero .hero-inner button {
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 0 white;
+  color: #333333;
+  display: inline-block;
+  font-size: inherit;
+  font-weight: bold;
+  background-color: white;
+  background-image: -webkit-linear-gradient(white, #e3e3e3);
+  background-image: linear-gradient(white, #e3e3e3);
+  padding: 7px 18px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 white;
+  background-clip: padding-box;
+  border: 1px solid #dfd8d8;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 0 white;
+  color: #333333;
+  display: inline-block;
+  font-size: inherit;
+  font-weight: bold;
+  background-color: white;
+  background-image: -webkit-linear-gradient(white, #e5e0e0);
+  background-image: linear-gradient(white, #e5e0e0);
+  padding: 7px 18px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 white;
+  background-clip: padding-box;
+  font-size: 1em;
+  outline: none;
+}
+/* line 131, /Users/VajraCreations/.rvm/gems/ruby-2.1.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_button.scss */
+.hero .hero-inner button:hover:not(:disabled) {
+  box-shadow: inset 0 1px 0 0 white;
+  cursor: pointer;
+  background-color: #f2f2f2;
+  background-image: -webkit-linear-gradient(#f2f2f2, #dbdbdb);
+  background-image: linear-gradient(#f2f2f2, #dbdbdb);
+}
+/* line 148, /Users/VajraCreations/.rvm/gems/ruby-2.1.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_button.scss */
+.hero .hero-inner button:active:not(:disabled), .hero .hero-inner button:focus:not(:disabled) {
+  border: 1px solid #dbdbdb;
+  box-shadow: inset 0 0 8px 4px #d4d4d4, inset 0 0 8px 4px #d4d4d4;
+}
+/* line 131, /Users/VajraCreations/.rvm/gems/ruby-2.1.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_button.scss */
+.hero .hero-inner button:hover:not(:disabled) {
+  box-shadow: inset 0 1px 0 0 white;
+  cursor: pointer;
+  background-color: #f2f2f2;
+  background-image: -webkit-linear-gradient(#f2f2f2, #ded8d8);
+  background-image: linear-gradient(#f2f2f2, #ded8d8);
+}
+/* line 148, /Users/VajraCreations/.rvm/gems/ruby-2.1.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_button.scss */
+.hero .hero-inner button:active:not(:disabled), .hero .hero-inner button:focus:not(:disabled) {
+  border: 1px solid #dfd8d8;
+  box-shadow: inset 0 0 8px 4px #d7d1d1, inset 0 0 8px 4px #d7d1d1;
+}
+/* line 51, /Users/VajraCreations/.rvm/gems/ruby-2.1.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_button.scss */
+.hero .hero-inner button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+/* line 34, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/pages.css.scss */
+.hero .hero-inner .hero-copy {
+  text-align: center;
+}
+/* line 37, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/pages.css.scss */
+.hero .hero-inner .hero-copy h1 {
+  font-size: 1.6em;
+  margin-bottom: .5em;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 37, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/pages.css.scss */
+  .hero .hero-inner .hero-copy h1 {
+    font-size: 1.8em;
+  }
+}
+/* line 46, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/pages.css.scss */
+.hero .hero-inner .hero-copy p {
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  margin: auto;
+  margin-bottom: 3em;
+  font-weight: 200;
+  line-height: 1.4em;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 46, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/pages.css.scss */
+  .hero .hero-inner .hero-copy p {
+    font-size: 1.1em;
+    max-width: 40%;
+  }
+}
+
+/***************************
+These are the styles for the patterns section
+***************************/
+/***************************
+accordion/tabs styling begins, please note there is 
+accompanying javascript file for this aswell. 
+***************************/
+/* line 12, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.accordion-tabs {
+  margin-bottom: 1.5em;
+}
+/* line 15, /Users/VajraCreations/.rvm/gems/ruby-2.1.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_clearfix.scss */
+.accordion-tabs:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 40em) {
+  /* line 12, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+  .accordion-tabs {
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+  }
+}
+@media screen and (min-width: 40em) {
+  /* line 29, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+  .accordion-tabs .tab-header-and-content {
+    display: inline;
+  }
+}
+/* line 34, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.accordion-tabs .tab-header-and-content:first-child .tab-link {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+@media screen and (max-width: 40em) {
+  /* line 34, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+  .accordion-tabs .tab-header-and-content:first-child .tab-link {
+    border-top: 0;
+  }
+}
+@media screen and (max-width: 40em) {
+  /* line 43, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+  .accordion-tabs .tab-header-and-content:last-child .tab-link {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+}
+/* line 51, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.accordion-tabs .tab-link {
+  background-color: white;
+  border-top: 1px solid #dddddd;
+  color: #333333;
+  display: block;
+  font-weight: bold;
+  padding: 0.75em 0.809em;
+}
+@media screen and (min-width: 40em) {
+  /* line 51, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+  .accordion-tabs .tab-link {
+    display: inline-block;
+    vertical-align: baseline;
+    zoom: 1;
+    *display: inline;
+    *vertical-align: auto;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-top: 0;
+  }
+}
+/* line 66, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.accordion-tabs .tab-link:hover {
+  color: #477dca;
+}
+/* line 70, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.accordion-tabs .tab-link:focus {
+  outline: none;
+}
+/* line 74, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.accordion-tabs .tab-link.is-active {
+  background-color: #f7f7f7;
+}
+@media screen and (min-width: 40em) {
+  /* line 74, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+  .accordion-tabs .tab-link.is-active {
+    background-color: #f7f7f7;
+    border: 1px solid #dddddd;
+    border-bottom-color: #f7f7f7;
+    margin-bottom: -1px;
+  }
+}
+/* line 86, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.accordion-tabs .tab-content {
+  background: #f7f7f7;
+  display: none;
+  padding: 1.5em 1.618em;
+}
+@media screen and (min-width: 40em) {
+  /* line 86, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+  .accordion-tabs .tab-content {
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    border: 1px solid #dddddd;
+    float: left;
+  }
+}
+
+/***************************
+accordion/tabs styling end
+***************************/
+/***************************
+browser styling begins 
+***************************/
+/* line 119, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.browsers {
+  display: inline-block;
+  padding-top: 0;
+  text-align: center;
+  width: 100%;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 119, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+  .browsers {
+    padding-top: 2em;
+  }
+}
+
+/* line 130, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.browser-top-bar {
+  background-color: #ececec;
+  background-image: -webkit-linear-gradient(#ececec, #e7e7e7);
+  background-image: linear-gradient(#ececec, #e7e7e7);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border: 0px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  height: 1.5em;
+  width: 100%;
+}
+
+/* line 140, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.browser-circle {
+  border-radius: 1em;
+  box-shadow: 0 1px 0px rgba(255, 255, 255, 0.5), inset 0 1px 1px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  width: 0.5em;
+  height: 0.5em;
+  margin: 0.5em 0;
+}
+
+/* line 148, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.browser-circle:nth-child(1) {
+  background: #FF6F55;
+  margin-left: 0.5em;
+}
+
+/* line 153, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.browser-circle:nth-child(2) {
+  background: #F5B01D;
+  margin-left: 0.16667em;
+}
+
+/* line 158, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.browser-circle:nth-child(3) {
+  background: #51B151;
+  margin-left: 0.16667em;
+}
+
+/* line 165, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.browser {
+  border-bottom: none;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  text-align: left;
+  width: 20%;
+}
+
+/* line 175, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.browser:nth-child(1) {
+  background-color: #f0f0f0;
+  display: none;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 175, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+  .browser:nth-child(1) {
+    display: inline-block;
+  }
+}
+/* line 183, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.browser:nth-child(1) .browser-content {
+  background: url(https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/refills-screenshot1.png);
+  background-color: #f0f0f0;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 192, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.browser:nth-child(2) {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  background-color: white;
+  width: 90%;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 192, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+  .browser:nth-child(2) {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+    width: 40%;
+  }
+}
+/* line 202, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.browser:nth-child(2) .browser-content {
+  background: url(https://raw.githubusercontent.com/thoughtbot/refills/9c16f8b69d857c296c85f2d8c434e825f813a566/source/images/refills-screenshot2.jpg);
+  background-color: white;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 211, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.browser:nth-child(3) {
+  background-color: #f0f0f0;
+  display: none;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 211, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+  .browser:nth-child(3) {
+    display: inline-block;
+  }
+}
+/* line 219, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.browser:nth-child(3) .browser-content {
+  background: url(https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/refills-screenshot3.png);
+  background-color: #f0f0f0;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 228, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.browser-content {
+  border-left: 0px;
+  border-right: 0px;
+  height: 17em;
+  overflow: hidden;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 228, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+  .browser-content {
+    height: 18em;
+  }
+}
+
+/* line 241, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.cover {
+  background: white;
+  border-top: 1px solid #E6E6E6;
+  height: 3.2em;
+  margin-top: -1em;
+  position: relative;
+  width: 100%;
+  z-index: 999;
+}
+
+/***************************
+browser styling ends 
+***************************/
+/***************************
+card styling begins 
+***************************/
+/* line 15, /Users/VajraCreations/.rvm/gems/ruby-2.1.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_clearfix.scss */
+.cards:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 262, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.card {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+  border: 1px solid #dddddd;
+  margin-bottom: 1.5em;
+  cursor: pointer;
+  box-shadow: 0 2px 4px #e6e6e6;
+  position: relative;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 262, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+  .card {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+  }
+  /* line 38, /Users/VajraCreations/.rvm/gems/ruby-2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+  .card:last-child {
+    margin-right: 0;
+  }
+  /* line 52, /Users/VajraCreations/.rvm/gems/ruby-2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_omega.scss */
+  .card:nth-child(3n) {
+    margin-right: 0;
+  }
+  /* line 57, /Users/VajraCreations/.rvm/gems/ruby-2.1.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_omega.scss */
+  .card:nth-child(3n+1) {
+    clear: left;
+  }
+}
+/* line 286, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.card .card-image {
+  overflow: hidden;
+  max-height: 150px;
+}
+/* line 290, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.card .card-image img {
+  width: 100%;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background: #dbd199;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+/* line 299, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.card .ribbon-wrapper {
+  width: 85px;
+  height: 85px;
+  overflow: hidden;
+  position: absolute;
+  top: -1px;
+  right: -1px;
+}
+/* line 308, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.card .ribbon-wrapper .ribbon {
+  font-size: .8em;
+  font-weight: 800;
+  text-align: center;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: relative;
+  padding: 2px 7px;
+  left: -5px;
+  top: 15px;
+  width: 120px;
+  background-color: #477dca;
+  color: white;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+/* line 324, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.card .card-header {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #dddddd;
+  border-radius: 3px 3px 0 0;
+  font-weight: bold;
+  padding: 0.5em 0.809em;
+}
+/* line 333, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.card .card-copy {
+  padding: 0.75em 0.809em;
+  font-size: .9em;
+  line-height: 1.5em;
+}
+/* line 339, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.card .card-stats {
+  padding: 0.75em 0.809em;
+  overflow: auto;
+}
+/* line 343, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.card .card-stats ul li {
+  display: inline;
+  color: #6f99d5;
+  font-weight: 800;
+  font-size: 1.2em;
+  float: left;
+  border-right: 1px solid rgba(51, 51, 51, 0.2);
+  line-height: 1.1em;
+  padding: 0 .7em 0 .7em;
+}
+/* line 353, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.card .card-stats ul li:first-child {
+  padding-left: 0;
+}
+/* line 357, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.card .card-stats ul li:last-child {
+  border-right: 0;
+}
+/* line 361, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.card .card-stats ul li span {
+  color: #333333;
+  font-size: .7em;
+  display: block;
+  font-weight: normal;
+}
+/* line 370, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.card:hover {
+  background-color: white;
+}
+/* line 373, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.card:hover .card-image img {
+  background: #e2daac;
+}
+/* line 377, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.card:hover .card-header {
+  background-color: white;
+}
+/* line 382, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.card:active {
+  background-color: #f7f7f7;
+}
+/* line 385, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.card:active .card-header {
+  background-color: #f7f7f7;
+}
+
+/***************************
+CARDS styling ends 
+***************************/
+/***************************
+COMMENTS styling begins 
+***************************/
+/* line 397, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.comment {
+  display: table;
+  width: 100%;
+  margin-bottom: 1.5em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.1);
+}
+/* line 413, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.comment .comment-image,
+.comment .comment-content {
+  display: table-cell;
+  vertical-align: top;
+}
+/* line 418, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.comment .comment-image {
+  padding-right: 1.4em;
+}
+/* line 421, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.comment .comment-image > img {
+  width: 4em;
+  height: auto;
+  border-radius: 3px;
+  padding: 0.7em;
+  background: #82a7db;
+  display: block;
+  max-width: none;
+}
+/* line 431, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.comment-reverse-order .comment .comment-image {
+  padding-right: 0;
+  padding-left: 10px;
+}
+/* line 437, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.comment .comment-content {
+  width: 100%;
+}
+/* line 440, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.comment .comment-content h1 {
+  font-size: 1em;
+  margin-bottom: .5em;
+}
+/* line 445, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.comment .comment-content p {
+  margin-bottom: .5em;
+}
+/* line 449, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.comment .comment-content p.comment-detail {
+  font-style: italic;
+  font-size: .9em;
+  color: rgba(51, 51, 51, 0.5);
+}
+
+/***************************
+COMMENTS styling ENDS 
+***************************/
+/***************************
+DEVICE styling ENDS 
+***************************/
+/* line 479, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.device-background {
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png"), -webkit-linear-gradient(-280deg, #0a120d, #162c4c), no-repeat #162c4c scroll;
+  background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png"), linear-gradient(10deg, #0a120d, #162c4c), no-repeat #162c4c scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 20em;
+}
+/* line 486, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.device-background button {
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 0 white;
+  color: #333333;
+  display: inline-block;
+  font-size: inherit;
+  font-weight: bold;
+  background-color: white;
+  background-image: -webkit-linear-gradient(white, #e3e3e3);
+  background-image: linear-gradient(white, #e3e3e3);
+  padding: 7px 18px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 white;
+  background-clip: padding-box;
+  border: 1px solid #dfd8d8;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 0 white;
+  color: #333333;
+  display: inline-block;
+  font-size: inherit;
+  font-weight: bold;
+  background-color: white;
+  background-image: -webkit-linear-gradient(white, #e5e0e0);
+  background-image: linear-gradient(white, #e5e0e0);
+  padding: 7px 18px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 white;
+  background-clip: padding-box;
+  font-size: 1em;
+  outline: none;
+}
+/* line 131, /Users/VajraCreations/.rvm/gems/ruby-2.1.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_button.scss */
+.device-background button:hover:not(:disabled) {
+  box-shadow: inset 0 1px 0 0 white;
+  cursor: pointer;
+  background-color: #f2f2f2;
+  background-image: -webkit-linear-gradient(#f2f2f2, #dbdbdb);
+  background-image: linear-gradient(#f2f2f2, #dbdbdb);
+}
+/* line 148, /Users/VajraCreations/.rvm/gems/ruby-2.1.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_button.scss */
+.device-background button:active:not(:disabled), .device-background button:focus:not(:disabled) {
+  border: 1px solid #dbdbdb;
+  box-shadow: inset 0 0 8px 4px #d4d4d4, inset 0 0 8px 4px #d4d4d4;
+}
+/* line 131, /Users/VajraCreations/.rvm/gems/ruby-2.1.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_button.scss */
+.device-background button:hover:not(:disabled) {
+  box-shadow: inset 0 1px 0 0 white;
+  cursor: pointer;
+  background-color: #f2f2f2;
+  background-image: -webkit-linear-gradient(#f2f2f2, #ded8d8);
+  background-image: linear-gradient(#f2f2f2, #ded8d8);
+}
+/* line 148, /Users/VajraCreations/.rvm/gems/ruby-2.1.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_button.scss */
+.device-background button:active:not(:disabled), .device-background button:focus:not(:disabled) {
+  border: 1px solid #dfd8d8;
+  box-shadow: inset 0 0 8px 4px #d7d1d1, inset 0 0 8px 4px #d7d1d1;
+}
+/* line 51, /Users/VajraCreations/.rvm/gems/ruby-2.1.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_button.scss */
+.device-background button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* line 493, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.device-text {
+  color: white;
+  padding: 2em;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 493, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+  .device-text {
+    max-width: 50%;
+    padding: 4em;
+    float: left;
+  }
+}
+/* line 503, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.device-text h4 {
+  margin-bottom: .5em;
+  padding-bottom: .5em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+/* line 509, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.device-text p {
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  margin-bottom: 1.5em;
+}
+
+/* line 515, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.device {
+  display: none;
+  position: relative;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 515, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+  .device {
+    -webkit-transform: perspective(800px) translateX(0px) translateY(-100px) translateZ(50px) rotateX(0deg) rotateY(-20deg) rotateZ(0deg);
+    -moz-transform: perspective(800px) translateX(0px) translateY(-100px) translateZ(50px) rotateX(0deg) rotateY(-20deg) rotateZ(0deg);
+    -ms-transform: perspective(800px) translateX(0px) translateY(-100px) translateZ(50px) rotateX(0deg) rotateY(-20deg) rotateZ(0deg);
+    -o-transform: perspective(800px) translateX(0px) translateY(-100px) translateZ(50px) rotateX(0deg) rotateY(-20deg) rotateZ(0deg);
+    transform: perspective(800px) translateX(0px) translateY(-100px) translateZ(50px) rotateX(0deg) rotateY(-20deg) rotateZ(0deg);
+    display: block;
+    float: right;
+    margin-bottom: -12em;
+    margin-right: 5em;
+    padding: 5em 0;
+    width: 14.8em;
+    border-radius: 2em;
+    background: #1a1a1a;
+    box-shadow: 1px 0px #343434, 4px 0px #060606, 7px 0px black, 10px 0px black, 13px 0px black;
+    z-index: 99999;
+  }
+  /* line 544, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+  .device .screen {
+    width: 14em;
+    height: 25em;
+    background-image: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/cosmin_capitanu_screen.jpg");
+    background-size: cover;
+    box-shadow: inset 0 1px 8px rgba(0, 0, 0, 0.5);
+    margin: auto;
+    border-radius: .2em;
+  }
+}
+
+/***************************
+DEVICE styling ENDS 
+***************************/
+/***************************
+GRID ITEMS styling begins 
+***************************/
+/* line 15, /Users/VajraCreations/.rvm/gems/ruby-2.1.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_clearfix.scss */
+.grid-items:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 585, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.grid-items .grid-item {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  height: 14em;
+  background: #6b83a6;
+  width: 100%;
+  overflow: hidden;
+  float: left;
+  padding: 2em;
+  border-top: 0;
+  border-bottom: 9px solid white;
+  border-left: 4.5px solid white;
+  border-right: 4.5px solid white;
+  text-align: center;
+  cursor: pointer;
+}
+@media screen and (min-width: 53.75em) {
+  /* line 585, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+  .grid-items .grid-item {
+    width: 33.33333%;
+  }
+}
+/* line 605, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.grid-items .grid-item:nth-child(1) {
+  background-color: #6b83a6;
+  box-shadow: inset 0px 0px 1px 2px #536a8b;
+}
+/* line 609, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.grid-items .grid-item:nth-child(1):hover {
+  background-color: #536a8b;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+/* line 605, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.grid-items .grid-item:nth-child(2) {
+  background-color: #3581a5;
+  box-shadow: inset 0px 0px 1px 2px #29637e;
+}
+/* line 609, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.grid-items .grid-item:nth-child(2):hover {
+  background-color: #29637e;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+/* line 605, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.grid-items .grid-item:nth-child(3) {
+  background-color: #5fbebe;
+  box-shadow: inset 0px 0px 1px 2px #44a6a6;
+}
+/* line 609, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.grid-items .grid-item:nth-child(3):hover {
+  background-color: #44a6a6;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+/* line 605, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.grid-items .grid-item:nth-child(4) {
+  background-color: #98c79a;
+  box-shadow: inset 0px 0px 1px 2px #77b57a;
+}
+/* line 609, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.grid-items .grid-item:nth-child(4):hover {
+  background-color: #77b57a;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+/* line 605, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.grid-items .grid-item:nth-child(5) {
+  background-color: #a7a891;
+  box-shadow: inset 0px 0px 1px 2px #909175;
+}
+/* line 609, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.grid-items .grid-item:nth-child(5):hover {
+  background-color: #909175;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+/* line 605, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.grid-items .grid-item:nth-child(6) {
+  background-color: #bdcc97;
+  box-shadow: inset 0px 0px 1px 2px #a7bb75;
+}
+/* line 609, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.grid-items .grid-item:nth-child(6):hover {
+  background-color: #a7bb75;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+/* line 605, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.grid-items .grid-item:nth-child(7) {
+  background-color: #979ea0;
+  box-shadow: inset 0px 0px 1px 2px #7c8588;
+}
+/* line 609, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.grid-items .grid-item:nth-child(7):hover {
+  background-color: #7c8588;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+/* line 619, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.grid-items .grid-item img {
+  display: block;
+  height: 3em;
+  margin: auto;
+  margin-bottom: 1em;
+}
+/* line 626, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.grid-items .grid-item h1 {
+  color: white;
+  font-size: 1.3em;
+  margin-bottom: .4em;
+}
+/* line 632, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.grid-items .grid-item p {
+  margin: auto;
+  color: rgba(255, 255, 255, 0.7);
+}
+@media screen and (min-width: 40em) {
+  /* line 632, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+  .grid-items .grid-item p {
+    max-width: 70%;
+  }
+}
+@media screen and (min-width: 53.75em) {
+  /* line 640, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+  .grid-items .grid-item-big {
+    width: 66.66667%;
+  }
+}
+@media screen and (min-width: 40em) {
+  /* line 644, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+  .grid-items .grid-item-big p {
+    max-width: 60%;
+  }
+}
+/* line 651, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/patterns.css.scss */
+.grid-items .grid-item-image {
+  background: url(/images/lake-transparent.png);
+  background-color: #6b83a6;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+/***************************
+GRID ITEMS styling ends 
+***************************/
+/* line 1, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/typography.css.scss */
+article.type-system-serif {
+  text-align: left;
+}
+/* line 15, /Users/VajraCreations/.rvm/gems/ruby-2.1.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_clearfix.scss */
+article.type-system-serif:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 9, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/typography.css.scss */
+article.type-system-serif .type {
+  border-bottom: 1px solid;
+  display: inline-block;
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: .7em;
+  font-weight: 700;
+  margin-bottom: 2em;
+  padding: .3em 0;
+  text-align: left;
+  text-transform: uppercase;
+}
+/* line 21, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/typography.css.scss */
+article.type-system-serif h1 {
+  font-family: "Lusitana", serif;
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: .5em;
+}
+@media screen and (min-width: 40em) {
+  /* line 21, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/typography.css.scss */
+  article.type-system-serif h1 {
+    font-size: 2.6em;
+  }
+}
+/* line 32, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/typography.css.scss */
+article.type-system-serif h2 {
+  font-family: "Merriweather", serif;
+  font-style: italic;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.6em;
+  margin-bottom: .9em;
+}
+@media screen and (min-width: 40em) {
+  /* line 32, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/typography.css.scss */
+  article.type-system-serif h2 {
+    font-size: 1.2em;
+  }
+}
+/* line 45, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/typography.css.scss */
+article.type-system-serif code {
+  white-space: nowrap;
+  font-family: monaco;
+  background: #F7F7F7;
+  border: 1px solid #E0E0E0;
+  border-radius: 4.5px;
+  padding: .1em .4em;
+  font-size: .75em;
+  font-style: normal;
+}
+/* line 56, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/typography.css.scss */
+article.type-system-serif h3 {
+  font-family: "Lusitana", serif;
+  font-size: 1.4em;
+  font-weight: 400;
+  line-height: 1.3em;
+  margin-bottom: .4em;
+}
+/* line 64, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/typography.css.scss */
+article.type-system-serif p.date {
+  color: rgba(51, 51, 51, 0.4);
+  font-family: "Merriweather", serif;
+  font-style: italic;
+  font-size: .9em;
+  margin-bottom: .3em;
+}
+/* line 72, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/typography.css.scss */
+article.type-system-serif p {
+  font-family: "Merriweather", serif;
+  line-height: 1.6em;
+  font-size: .9em;
+  margin-bottom: 1.5em;
+}
+/* line 78, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/typography.css.scss */
+article.type-system-serif p span {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 700;
+}
+/* line 84, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/typography.css.scss */
+article.type-system-serif a.read-more {
+  display: inline-block;
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 700;
+  font-size: .8em;
+  text-transform: uppercase;
+  margin-left: .2em;
+  position: relative;
+}
+/* line 93, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/typography.css.scss */
+article.type-system-serif a.read-more span {
+  font-family: "Lusitana", serif;
+  font-style: normal;
+  position: absolute;
+  font-size: 1.5em;
+  top: -1px;
+  right: -12px;
+}
+/* line 103, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/typography.css.scss */
+article.type-system-serif hr {
+  width: 3em;
+}
+/* line 107, /Users/VajraCreations/rails_projects/refills_on_ror/app/assets/stylesheets/typography.css.scss */
+article.type-system-serif p.author {
+  font-family: "Merriweather", serif;
+  font-style: italic;
+}
