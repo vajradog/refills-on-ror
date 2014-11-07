@@ -7,6 +7,8 @@ I've also postgresql to deploy to heroku and gem 'rails_12factor' to serve asset
 
 [demo app](https://refills-on-rails.herokuapp.com/)
 
+###Screen shots from the demo app
+
 ![screen shot 1](http://s17.postimg.org/qeiljgdwv/Screen_Shot_2014_11_07_at_11_01_12_AM.png)
 
 ![screen shot 2](http://s17.postimg.org/qq01w7ucv/Screen_Shot_2014_11_07_at_11_01_29_AM.png)
